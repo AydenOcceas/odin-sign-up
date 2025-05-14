@@ -44,7 +44,7 @@ img.icon {
 
 div.main {
     background-color: #f7f7f7;
-    padding-top: 20px;
+    padding-top: 80px;
     font-family: "Share Tech", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -70,6 +70,15 @@ div.main > p {
     padding-left: 50px;
 }
 
+div.main > p {
+    margin-right: 150px;
+    font-size: 1.2rem;
+}
+
+div.main > p::first-line {
+    font-size: 1.7rem;
+}
+
 div.main div {
     margin-bottom: 12px;
 }
@@ -91,5 +100,25 @@ input:user-invalid {
 input:focus {
     outline: none;
     border: 2px solid lightskyblue;
-    box-shadow: 10px 10px 15px -6px black;
+    box-shadow: 5px 5px 10px -6px black;
+}
+
+button[type="submit"] {
+    appearance: none;
+    border: none;
+    background-color: #374464;
+    padding: 10px 30px;
+    color: #fff;
+    font-family: inherit;
+    font-size: 1.2rem;
+    border-radius: 16px;
+    margin-top: 15px;
+}
+
+button[type="submit"]:hover {
+    background-color: hsl(223, 29%, 50%);
+}
+
+.form-element {
+    margin-left: 40px;
 }
